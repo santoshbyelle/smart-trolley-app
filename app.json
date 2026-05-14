@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Smart Trolley",
+    "slug": "smart-trolley",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0D0D0D"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.smarttrolley.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Smart Trolley needs camera access for AI tracking.",
+        "NSLocationWhenInUseUsageDescription": "Smart Trolley needs location to track your position and the trolley."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0D0D0D"
+      },
+      "package": "com.smarttrolley.app",
+      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "VIBRATE"]
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-location"
+    ],
+    "newArchEnabled": true
+  }
+}
